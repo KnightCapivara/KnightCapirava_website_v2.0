@@ -1,27 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Cool Website</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Capivara</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- link para estilo de fonte do CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap">
+
+</head>
 <body>
+    <header> 
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
 
-    <!-- Dark Mode Switch -->
-    <div class="theme-switch-wrapper">
-        <span id="toggle-icon">
-            <span class="toggle-text">Dark Mode</span>
-            <i class="fas fa-sun"></i>
-        </span>
-        <label class="theme-switch">
-            <input type="checkbox">
-            <div class="slider round"></div>
-        </label>
-    </div>
-    <!-- Dark Mode Switch -->
+        <div class="sign-in">
+            <form action="#">
+                <input type="email" placeholder="Ex.: email@gmail.com">
+                <input type="password" placeholder="Senha">
 
-    <script src="script.js"></script>
+                <button type="submit" class="button primary">Entrar</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro gray">
+            <div class="container">
+                <div class='hero'>
+                    <h1>
+                        Ajudamos <strong>programadores</strong> a conseguirem seu <strong> primeiro emprego</strong>
+                    </h1>
+        
+                    <p>Mais de 100 mil desenvolvedores já conseguiram o seu primeiro emprego usando nossa plataforma!</p>
+
+                    <div class="cta">
+                        <a href="#" class='button primary'>Sou programador</a>
+                        <a href="#" class='button secondary'>Somos empresa contratando</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="languages">
+            <div class="container">
+                <h1 class='tittle'>Linguagens</h1>
+
+                <div class="cards">
+                    <div class="card red">Ruby</div>
+                    <div class="card blue">JavaScript</div>
+                    <div class="card purple">Elixir</div>
+                    <div class="card yellow">Python</div>
+                    <div class="card green">Go</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="team gray">
+            <div class="container">
+                <h2 class='tittle'>Danillo Acassio</h2>
+                
+                <div class="members">
+                    <div class="member"><img src="images/team/danillo.jpg" alt="Danillo, responsavel pelo Knight Capivara"></div>
+                    <!-- <div class="member"><img src="images/team/jesse.jpg"></div> -->
+                    <p><strong>Olá! Sou idealizador do KnightCapivara.com.br</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#"><img src="images/icons/privateinternetaccess.svg" height="40" width="38" alt="Politica de privacidade"></a></li>
+                <li><a href="#"><img src="images/icons/github.svg" height="40" width="38" alt="GitHub"></a></li>
+                <li><a href="#"><img src="images/icons/linkedin.svg" height="40" width="38" alt="LinkedIn"></a></li>
+                <li><a href="#"><img src="images/icons/instagram.svg" height="40" width="38" alt="Instagram"></a></li>
+                <li><a href="#"><img src="images/icons/facebook.svg" height="40" width="38" alt="Facebook"><br></a></li>
+            </ul>
+
+            <p class="copyright">&copy;KnightCapivara. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
