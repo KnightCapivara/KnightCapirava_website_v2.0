@@ -7,13 +7,22 @@
     <title>Knight Capivara</title>
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="/css/style.css">
-    
-    <!-- link para estilo de fonte do CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap">
 
 </head>
 <body>
-    <header> 
+    <header>
+        <div class="theme-switch-wrapper">
+            <span id="toggle-icon">
+                <span class="toggle-text">Dark Mode</span>
+                <i class="fas fa-sun"></i>
+            </span>
+            <label class="theme-switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>
+     
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
@@ -23,12 +32,13 @@
                 <input type="email" placeholder="Ex.: email@gmail.com">
                 <input type="password" placeholder="Senha">
 
-                <button type="submit" class="button primary">Entrar</button>
+                <button type="submit" class="button primary">Entrar em Contato</button>
             </form>
         </div>
     </header>
 
     <main>
+
         <section class="intro gray">
             <div class="container">
                 <div class='hero'>
@@ -53,9 +63,9 @@
                 <div class="cards">
                     <div class="card red">Ruby</div>
                     <div class="card blue">JavaScript</div>
-                    <div class="card purple">Elixir</div>
-                    <div class="card yellow">Python</div>
-                    <div class="card green">Go</div>
+                    <div class="card purple">Ruby on Rails</div>
+                    <div class="card yellow">React</div>
+                    <div class="card green">Html5 / Css3</div>
                 </div>
             </div>
         </section>
@@ -86,5 +96,7 @@
             <p class="copyright">&copy;KnightCapivara. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
