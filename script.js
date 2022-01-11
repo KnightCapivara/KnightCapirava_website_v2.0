@@ -9,23 +9,23 @@ const textBox = document.getElementById('text-box');
 const DARK_THEME = 'dark'
 const LIGHT_THEME = 'light'
 
-// Dark or Light Image 
+// Escolha da imagem em modo dark ou light 
 function imageMode(color){
     image1.src = `img/undraw_proud_coder_${color}.svg`;
     image2.src = `img/undraw_conceptual_idea_${color}.svg`;
     image3.src = `img/undraw_feeling_proud_${color}.svg`;
 }
 
-// function for switch dark/light mode ans change the tags and elements 
+// função para alternar o modo escuro/claro e alterar as tags e elementos 
 function toogleDarkLightMode(isDark) {
-    nav.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)' ;
-    textBox.style.backgroundColor = isDark ? 'rgb( 255 255 255 /50%)' : 'rgb(0 0 0 / 50%)';
+    nav.background = isDark ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)' ;
+    textBox.style.background = isDark ? 'rgb( 255 255 255 /50%)' : 'rgb(0 0 0 / 50%)';
     toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
     isDark ? toggleIcon.children[1].classList.replace('fa-sun' ,'fa-moon' ): toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
     isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME);
 }
 
-// Switch Theme
+// Altera o tema
 function switchTheme(event) {
     if (event.target.checked) {
         document.documentElement.setAttribute('data-theme', DARK_THEME);
@@ -38,10 +38,10 @@ function switchTheme(event) {
     }
 }
 
-// Event Listener
+// Evento
 toggleSwitch.addEventListener('change',switchTheme);
 
-// Check Local Storage For Theme
+// Verificar armazenamento local do tema 
 const currentTheme = localStorage.getItem('theme');
 if(currentTheme) {
     document.documentElement.setAttribute('data-theme',currentTheme);
