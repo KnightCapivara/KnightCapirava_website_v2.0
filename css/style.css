@@ -50,7 +50,7 @@ header {
 }
 
 .sign-in {
-    display: grid;
+    display: none;
     justify-content: end;
     align-items: end;
     align-content: center;
