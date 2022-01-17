@@ -50,7 +50,7 @@ header {
 }
 
 .sign-in {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
 }
@@ -192,8 +192,8 @@ h2.tittle {
 }
 
 .member img {
-    width: 220px;
-    height: 230px;
+    width: 190px;
+    height: 200px;
     border-radius: 50%;
 }
 
