@@ -50,9 +50,10 @@ header {
 }
 
 .sign-in {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+    align-content: center;
 }
 
 .sign-in button {
@@ -116,8 +117,13 @@ h2.tittle {
 }
 
 .intro .cta {
+    display: grid;
+    grid-template-columns: auto auto;
     margin: 2rem 0;
     position: absolute;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: stretch;
 }
 
 .button {
