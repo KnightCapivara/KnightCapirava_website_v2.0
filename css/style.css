@@ -40,9 +40,13 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
     padding: 2rem;
+    align-content: center;
+    justify-items: stretch;
+    align-items: center;
 }
 
 .logo img {
@@ -50,10 +54,9 @@ header {
 }
 
 .sign-in {
-    display: none;
-    justify-content: end;
-    align-items: end;
-    align-content: center;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
 }
 
 .sign-in button {
@@ -120,8 +123,7 @@ h2.tittle {
     display: grid;
     grid-template-columns: auto auto;
     margin: 2rem 0;
-    position: absolute;
-    align-content: center;
+    position: relative;
     justify-content: space-around;
     justify-items: stretch;
 }
@@ -234,14 +236,13 @@ footer p.copyright {
 
 /* Alteração do modo Dark */
 .theme-switch-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 100;
+    display: grid;
+    /* z-index: 100; */
     position: relative;
-    right: 15px;
-    top: 88px;
+    /* right: 100px; */
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
   }
   
   .theme-switch-wrapper span {
