@@ -32,6 +32,7 @@
 }
 
 body {
+    display: grid;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: var(--on-background);
@@ -54,7 +55,7 @@ header {
 }
 
 .sign-in {
-    display: grid;
+    display: none;
     justify-content: center;
     justify-items: center;
 }
@@ -72,10 +73,18 @@ input[type='password'] {
     border: 1px solid #cccc;
 }
 
+main {
+    margin: auto;
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-template-columns: auto;
+}
+
 section {
-    padding: 3rem 0 4rem 0;
+    padding: 2rem 0 2rem 0;
     color: var(--on-background);
 }
+
 
 h1 {
     font-size: 2rem;
@@ -103,7 +112,7 @@ h2.tittle {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: auto;
     padding: 0 1rem;
 }
@@ -123,9 +132,10 @@ h2.tittle {
     display: grid;
     grid-template-columns: auto auto;
     margin: 2rem 0;
+    padding: 1rem 1rem;
     position: relative;
     justify-content: space-around;
-    justify-items: stretch;
+    justify-items: center;
 }
 
 .button {
@@ -151,25 +161,30 @@ h2.tittle {
 }
 
 .cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px;
 }
 
 .card {
-/*  organização do Flex */
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 73px;
+    grid-auto-flow: row dense;
+    column-gap: 20px;
     justify-content: center;
+    justify-items: stretch;
+    justify-self: stretch;
+    align-items: center;
     text-align: center;
-
-/*  organização da largura e altura */
-    height: 150px;
-    width: 18%;
-
-/*  organização sobre o texto */
+    text-orientation: sideways;
+    height: 125px;
+    width: auto;
     border-radius: 10px;
     color: white;
     font-size: 1.7rem;
+    margin: 5%;
+    padding: 1rem;
 }
 
 .card.ruby {
@@ -190,11 +205,12 @@ h2.tittle {
 
 .card.cloud {
     background-color: #235cc5;
-    font-size: x-large;
+    /* font-size: x-large; */
 }
 
 .members {
-    display: flex;
+    display: grid;
+    grid-template-columns: min-content;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -217,11 +233,14 @@ footer {
 }
 
 footer ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
-
-    padding-top: 2rem;
+    padding: 2rem 0;
     list-style-type: none;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 footer a {
@@ -239,7 +258,7 @@ footer p.copyright {
     display: grid;
     /* z-index: 100; */
     position: relative;
-    /* right: 100px; */
+    left: 160px;
     justify-items: end;
     justify-content: end;
     align-items: center;
