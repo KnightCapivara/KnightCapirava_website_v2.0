@@ -222,6 +222,7 @@ h2.tittle {
 }
 
 .members p {
+    margin: 4%;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 400;
