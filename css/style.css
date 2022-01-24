@@ -42,7 +42,8 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 0fr));
     justify-content: space-around;
     padding: 2rem;
     align-content: center;
@@ -112,7 +113,7 @@ h2.tittle {
 }
 
 .container {
-    max-width: 1120px;
+    /* max-width: 1120px; */
     margin: auto;
     padding: 0 1rem;
 }
@@ -162,9 +163,9 @@ h2.tittle {
 
 .cards {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 150px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    /* grid-template-rows: 150px; */
 }
 
 .card {
@@ -259,7 +260,7 @@ footer p.copyright {
     display: grid;
     /* z-index: 100; */
     position: relative;
-    left: 160px;
+    /* left: 160px; */
     justify-items: end;
     justify-content: end;
     align-items: center;
